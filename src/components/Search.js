@@ -30,7 +30,7 @@ export default function SearchBar({onClickSearchButton}) {
             </View>
             <LinearGradient
                 style = {styles.buttonStyle}
-                colors = {['rgba(81,255,128,0.7)', '#0096A0']}
+                colors = {['rgba(0,240,255,0.7)', '#5D75CE']}
                 start={{x: 0, y: 0}}
                 end = {{x: 1, y: 1}}
             >

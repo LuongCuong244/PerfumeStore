@@ -20,7 +20,7 @@ export default function ProductScreen(props) {
     return (
         <LinearGradient
             style={styles.container}
-            colors={['#3EB4BD', '#8ACDDA']}
+            colors={['#D6D6D6', '#BCBCBC']}
         >
             <View style={styles.contentContainer} >
                 <SearchBar onClickSearchButton={(text) => {
@@ -29,11 +29,11 @@ export default function ProductScreen(props) {
                     }));
                 }}/>
                 <Image 
-                    source={{uri: 'https://bizweb.dktcdn.net/100/386/441/themes/869880/assets/slider_1.jpg?1658716179964'}} 
+                    source={{uri: 'https://nuochoarosa.com/wp-content/uploads/2020/03/niche-perfume-brand-tom-daxon-le-labo-SCENTS_1200x672_acf_cropped.jpg'}} 
                     style = {{width: '95%', height: 100, marginVertical: 10}}
                     resizeMode = {"cover"}
                 />
-                <Text style = {{fontSize: 20, marginVertical: 5, color: 'white', fontWeight: 'bold', letterSpacing: 0.5}} >{"Tất cả sản phẩm"}</Text>
+                <Text style = {{fontSize: 20, marginVertical: 5, color: 'rgb(120,120,120)', fontWeight: 'bold', letterSpacing: 0.5}} >{"Tất cả sản phẩm"}</Text>
                 <View style = {styles.listViewBackground} >
                     <FlatList
                         data={data}

@@ -8,7 +8,6 @@ import {
     ImageBackground,
 } from 'react-native';
 
-import LinearGradient from "react-native-linear-gradient";
 import { formatNumberToString } from "../converter";
 
 export default function PerfumeItem({ item: { item, index }, onClick, isPay = false }) {
@@ -27,7 +26,12 @@ export default function PerfumeItem({ item: { item, index }, onClick, isPay = fa
                         ]}
                         activeOpacity={0.7}
                     >
-                        <Text style={styles.textButton} >{item.isAddedToCart ? isPay ? "Thanh toán" : "Bỏ thêm" : "Thêm"}</Text>
+                        <Text style={[
+                            styles.textButton,
+                            {
+                                color: (item.isAddedToCart || isPay) ? 'white' : 'black',
+                            }
+                        ]} >{item.isAddedToCart ? isPay ? "Thanh toán" : "Bỏ thêm" : "Thêm"}</Text>
                     </TouchableOpacity>
                 </ImageBackground>
                 <View style={styles.detail} >
@@ -60,7 +64,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
     },
     divider: {
-        backgroundColor: 'white',
+        backgroundColor: '#C6C6C6',
         width: '100%',
         height: 0.5,
     },

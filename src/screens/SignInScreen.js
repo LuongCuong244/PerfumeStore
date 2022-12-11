@@ -41,7 +41,7 @@ export default function SignInScreen(props) {
         >
             <LinearGradient
                 style={styles.container}
-                colors={['#3EB4BD', '#8ACDDA']}
+                colors={['#D6D6D6', '#BCBCBC']}
             >
                 <AppBar currentScreen = {props.currentScreen} title={"Đăng nhập"} />
                 <View style={styles.contentContainer} >
@@ -67,7 +67,7 @@ export default function SignInScreen(props) {
 
                     <LinearGradient
                         style = {styles.buttonStyle}
-                        colors = {['#43E28E', '#37B772']}
+                        colors = {['#48B8CE', '#009BB3']}
                     >
                         <TouchableOpacity
                             style={{flex: 1, justifyContent: 'center', alignItems: 'center',}}

@@ -11,7 +11,7 @@ export default function AppBar({ currentScreen, title, hasLeading = false, hasBa
     return (
         <LinearGradient
             style={styles.appBarStyle}
-            colors={['#00FFAA', '#44B6BF']}
+            colors={['#5EF8E3', '#5D6BCD']}
         >
             <Text style={styles.textStyle}>{title}</Text>
             {
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         fontSize: 22,
-        color: '#00656C',
+        color: 'white',
         paddingTop: 10,
         position: 'absolute',
         top: 0,

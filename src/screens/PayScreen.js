@@ -22,7 +22,7 @@ export default function PayScreen(props) {
     return (
         <LinearGradient
             style={styles.screenStyle}
-            colors={['#3EB4BD', '#8ACDDA']}
+            colors={['#D6D6D6', '#BCBCBC']}
         >
             <View style={styles.container} >
                 <View style={styles.divider} />
@@ -42,7 +42,7 @@ export default function PayScreen(props) {
 
                         <LinearGradient
                             style={{ justifyContent: 'center', alignItems: 'center', width: '70%', height: 45, borderRadius: 10 }}
-                            colors={['#0A9CBF', '#054E60']}
+                            colors={['#4CEB90', '#79DCA7']}
                         >
                             <Text style={styles.perfumeUnitPrice} >{`${formatNumberToString(perfumeItem.price)} đ`}</Text>
                         </LinearGradient>
@@ -152,7 +152,7 @@ export default function PayScreen(props) {
                 >
                     <LinearGradient
                         style={{ justifyContent: 'center', alignItems: 'center', flex: 1, borderRadius: 25 }}
-                        colors={['#61EAFF', '#3E43D9']}
+                        colors={['#48B8CE', '#009BB3']}
                     >
                         <Text style={styles.payLabel} >{"Thanh toán"}</Text>
                     </LinearGradient>
@@ -230,7 +230,7 @@ const styles = StyleSheet.create({
     },
     perfumeUnitPrice: {
         fontSize: 25,
-        color: '#FFD700',
+        color: 'white',
     },
     quantityButtonsContainer: {
         width: 120,
@@ -268,14 +268,14 @@ const styles = StyleSheet.create({
         top: 5,
     },
     totalAmount: {
-        fontSize: 42,
+        fontSize: 37,
         marginVertical: 10,
-        color: '#FFD700',
+        color: '#707070',
         fontWeight: '500',
     },
     payMethod: {
         fontSize: 20,
-        color: 'white',
+        color: 'black',
         marginTop: 15,
         fontStyle: 'italic'
     },

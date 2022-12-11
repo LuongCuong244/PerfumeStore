@@ -21,7 +21,7 @@ export default function CartScreen(props) {
     return (
         <LinearGradient
             style={styles.container}
-            colors={['#3EB4BD', '#8ACDDA']}
+            colors={['#D6D6D6', '#BCBCBC']}
         >
             <View style={styles.contentContainer} >
                 <SearchBar onClickSearchButton={(text) => {
@@ -31,7 +31,7 @@ export default function CartScreen(props) {
                 }}/>
                 
                 <View style = {{width: '100%', marginVertical: 10, paddingLeft: 15}}>
-                    <Text style = {{fontSize: 20, fontWeight: '500', color: 'white', }} >{"* Danh sách đã thêm của bạn"}</Text>
+                    <Text style = {{fontSize: 20, fontWeight: '500', color: 'rgb(120,120,120)', }} >{"* Danh sách đã thêm của bạn"}</Text>
                 </View>
 
                 <View style = {styles.listViewBackground} >

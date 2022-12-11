@@ -19,10 +19,10 @@ export default function ContactScreen(props) {
     return (
         <LinearGradient
             style={styles.container}
-            colors={['#3EB4BD', '#8ACDDA']}
+            colors={['#D6D6D6', '#BCBCBC']}
         >
             <View style={{ width: '100%', marginVertical: 10 }}>
-                <Text style={{ fontSize: 18, fontWeight: '500', color: 'white', }} >{"* Điền form sau để liên hệ với chúng tôi"}</Text>
+                <Text style={{ fontSize: 18, fontWeight: '500', color: 'rgb(120,120,120)', }} >{"* Điền form sau để liên hệ với chúng tôi"}</Text>
             </View>
 
             <Text style={styles.title} >{"Họ tên"}</Text>
@@ -107,7 +107,7 @@ const styles = StyleSheet.create({
         color: 'black',
     },
     buttonStyle: {
-        backgroundColor: 'blue',
+        backgroundColor: '#009BB3',
         width: 130,
         height: 45,
         marginTop: 5,

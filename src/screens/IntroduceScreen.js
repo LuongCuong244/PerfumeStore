@@ -3,60 +3,40 @@ import {
     View,
     StyleSheet,
     Text,
-    FlatList,
     ScrollView,
 } from 'react-native';
 
 import LinearGradient from "react-native-linear-gradient";
 
-export default function IntroduceScreen(props) {
+export default function IntroduceScreen() {
 
     return (
         <LinearGradient
             style={{flex: 1}}
-            colors={['#3EB4BD', '#8ACDDA']}
+            colors={['#D6D6D6', '#BCBCBC']}
         >
             <ScrollView
                 contentContainerStyle={{ flexGrow: 1, paddingBottom: 50 }}
             >
                 <View style={styles.container}>
-                    <Text style={styles.header} >{"TIỆN ÍCH - GIẢI TRÍ - KẾT NỐI"}</Text>
+                    <Text style={styles.header} >{"SHOP NƯỚC HOA D2PERFUME"}</Text>
                     <Text style={[styles.normalText, { marginVertical: 10 }]} >
-                        {"- Nhà sách Tiến Thọ là tổ hợp mua sắm - giải trí rộng hơn 2500m2, vừa là nơi để mọi người thỏa mãn nhu cầu của bản thân, vừa là không gian giúp giải phóng cảm xúc cá nhân."}
+                        {"- Lời đầu tiên, Nước hoa Pháp D2perfume xin gửi lời chào, lời chúc sức khỏe, thành công và lời cảm ơn Quý khách hàng đã luôn ủng hộ chúng tôi trong suốt hơn 10 năm qua. Với hơn 10 năm kinh nghiệm, D2perfume  luôn mong muốn mang đến cho quý khách hàng những trải nghiệm mới về mùi hương cũng như sản phẩm tốt nhất với mức giá tốt nhất đến với người dùng."}
                     </Text>
 
-                    <Text style={[styles.normalText, { marginVertical: 10 }]} >{"Lịch sử hình thành và phát triển"}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Chúng tôi chuyên cung cấp các loại nước hoa Pháp cao cấp nhất trên thế giới với tất cả các thương hiệu nổi tiếng như : Chanel , Hermes , Tom ford, GUCCI, DIOR..."}</Text>
 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"1. Lịch sử hình thành"}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Nguồn gốc hàng hoá xách tay Pháp  chính hãng sản xuất được thu mua từ công ty các trung tâm nước hoa uy tín nhất tại Pháp ( có hoá đơn mua hàng trực tiếp từ các gian hàng trên toàn Paris)."}</Text>
 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Tiền thân là tiệm sách cũ tại 612 đường Láng, mở cửa năm 1997"}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Giá cả hầu hết các sản phẩm đều rẻ hơn giá niêm yết của cty bên Pháp vì lý do chúng tôi luôn mua hàng trong đợt giảm giá của hãng , và vì là đối tác thường xuyên nên bao giờ cũng có thẻ thành viên VIP được giảm giá 25-50% đối với tuỳ dòng sản phẩm. Do vậy các sản phẩm đến tay khách hàng luôn ở mức giá tốt nhất có thể."}</Text>
 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Từ 1999 – 2010, phát triển lĩnh vực bán buôn và xuất bản. Trong giai đoạn này, Nhà sách Tiến Thọ chiến thị phần lớn tại thị trường miền Bắc."}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Hàng hoá đến tay khách hàng luôn đảm bảo chính hãng và chất lượng, khách hàng có quyền kiểm tra mùi hương , hoặc qua shop dùng thử trước khi mua hàng. "}</Text>
 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- 2010 đánh dấu một mốc quan trọng: Mở nhà sách Tiến Thọ bán lẻ - 828 Đường Láng với diện tích ban đầu 620m2"}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Ngoài ra chúng tôi có chính sách cho các shop nước hoa mỹ phẩm muốn làm đối tác."}</Text>
 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cuối 10/2016: mua lại nhà sách Nguyễn Văn Cừ và đầu 1/2017: Khai trương Nhà sách Tiến Thọ 36 Xuân Thủy."}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Từ 2019 – nay lần lượt khai trương các nhà sách: 424 Nguyễn Trãi, 697 Giải Phóng, 50 Nguyễn Thị Lưu, tp Bắc Giang, 282 Lương Ngọc Quyến, tp Thái Nguyên"}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"2. Tư tưởng, triết lý kinh doanh"}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Tư tưởng xuyên suốt: Luôn luôn đổi mới, nâng cấp theo hướng ngày càng hoàn thiện hơn."}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Triết lý kinh doanh: NSTT cam kết mang đến khách hàng dịch vụ, sự trải nghiệm tốt nhất trong tầm giá."}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Giao hàng tận tay quý khách trên toàn quốc. Shop có miễn phí vận chuyển và gói quà đối với chai fullsize."}</Text>
                 
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"3. Tầm nhìn"}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Với đà tăng trưởng 1 nhà sách / 1 năm trong 4 năm qua, trong 1-2 năm tiếp theo Nhà sách Tiến Thọ sẽ tiếp tục mở rộng và khai trương 2-3 cơ sở tại khu vực phía Bắc. Mục tiêu đến năm 2028, Nhà sách Tiến Thọ sẽ trở thành một chuỗi nhà sách & khu vui chơi lên đến 18-20 cơ sở."}</Text>
-                
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Nhà sách Tiến Thọ với 6 cơ sở:"}</Text>
-
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 1: 828 Đường Láng - Đống Đa - Hà Nội"}</Text>
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 2: 36 Xuân Thủy - Cầu Giấy - Hà Nội"}</Text>
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 3 : 424 Nguyễn Trãi - Thanh Xuân - Hà Nội"}</Text>
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 4 : 697 Giải Phóng - Hoàng Mai - Hà Nội"}</Text>
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 5 : 50 Nguyễn Thị Lưu - T.P Bắc Giang"}</Text>
-                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"- Cơ sở 6 : 282a Lương Ngọc Quyến - Thái Nguyên"}</Text>
+                    <Text style={[styles.normalText, { marginTop: 10 }]} >{"Chúng tôi luôn muốn đem lại sự hài lòng đến với khách hàng, sự hài lòng cho khách hàng chính là thành công của chúng tôi."}</Text>
                 </View >
             </ScrollView>
         </LinearGradient>
@@ -70,13 +50,13 @@ const styles = StyleSheet.create({
     },
     header: {
         fontSize: 20,
-        color: 'rgb(230,230,230)',
+        color: 'black',
         width: '100%',
         textAlign: 'center',
         marginTop: 15,
     },
     normalText: {
         fontSize: 17,
-        color: 'rgb(50,50,50)',
+        color: 'black',
     }
 })
